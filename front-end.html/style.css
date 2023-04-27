@@ -1,0 +1,633 @@
+* {
+  font-family: "Muli", sans-serif;
+}
+
+/* navbar desktop */
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b3545;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  padding-top: 6px;
+  float: left;
+  width: 50px;
+  padding-left: 0px;
+  display: inline-block;
+
+}
+
+.logo:hover {
+  opacity: 0.9;
+  transition: all ease-in-out 250ms;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#other {
+  padding: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #0b3545;
+}
+
+.other:hover {
+  background-color: #154354;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  transition: ease 250ms;
+}
+
+#loginbtn {
+  padding: 7px;
+  border: 1.3px solid white;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0px;
+  background-color: #0b3545;
+  color: white;
+  content-align: center;
+}
+
+#loginbtn:hover {
+  background: white;
+  color: #0b3545;
+  transition: ease 250ms;
+}
+
+#logoutbtn {
+  padding: 7px;
+  border: 1.3px solid white;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0px;
+  background-color: #0b3545;
+  color: white;
+}
+
+#logoutbtn:hover {
+  background: white;
+  color: #0b3545;
+  transition: ease 250ms;
+}
+
+#logout {
+  padding-left: 10px;
+  padding-top: 13px;
+  float: right;
+  display: inline-block;
+}
+
+
+#navitems{
+  float: left;
+  display: inline-block;
+
+}
+
+#login{
+  float: left;
+  display: inline-block;
+}
+
+.times{
+  color: white;
+  border: solid white;
+}
+
+/* phone navbar */
+
+
+
+/* phone display */
+
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  .img-header {
+    display: none;
+  }
+ 
+  .img-h-p {
+    display: block;
+  }
+  
+  .row {
+    display: visible;
+    width: 100%;
+  }
+  
+  html,
+  body {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    position: fixed;
+  }
+}
+
+/* block 1 */
+
+.img-h-p {
+  display: none;
+}
+
+.img-size {
+  height: auto;
+}
+
+/* block 2 */
+
+#b2-h1 {
+  padding-top: 2em;
+  color: #ed925b;
+}
+
+
+
+.column {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+  padding: 15px;
+}
+
+.column2{
+  border: 5px #32c4af;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+}
+
+.columnmsg{
+  border: 5px #32c4af;
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+}
+
+.column2a{
+  border: 5px #32c4af;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.column3{
+  border: 5px #32c4af;
+  display: inline-block;
+  text-align: center;
+  width: 39%;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.row {
+  padding-bottom: 2em;
+}
+
+.row2 {
+  padding-bottom: 2em;
+  background-color: #f4f4f4;
+}
+
+.rowupdate {
+  padding-bottom: 2em;
+  background-color: #ffffff;
+}
+
+.row3 {
+  padding-bottom: 0em;
+}
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inforecieve{
+  font-size: 20px;
+  color: #0b3545;
+  text-align: left;
+}
+
+.infotrack{
+  color: #0b3545;
+}
+
+.inforevise{
+  color: #0b3545;
+}
+
+
+
+.icon1 {
+  width: 12em;
+}
+
+#b3-h1 {
+  
+  color: #32c4af
+  
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+#b4-h1{ 
+   position: absolute; 
+   top: 70px; 
+   left: 1200px; 
+   width: 100%;
+   color: #f4f4f4; 
+}
+
+#b4-p1{
+   position: absolute; 
+   top: 170px; 
+   left: 945px; 
+   width: 25%;
+   color: #f4f4f4;
+   text-align: right; 
+}
+
+#b4-img1{
+   position: absolute; 
+   top: 187px; 
+   left: 820px; 
+   width: 80px;
+}
+
+#b4-p2{
+    position: absolute; 
+    top: 320px; 
+    left: 945px; 
+    width: 25%;
+    color: #f4f4f4;
+    text-align: right; 
+}
+
+#b4-img2{
+    position: absolute; 
+    top: 335px; 
+    left: 823px; 
+    width: 80px;
+}
+
+.fit{
+  width: 100%;
+}
+
+#b5-h1 {
+  color: #4b737d;
+}
+#reviseimage{
+  position:relative;
+  right:70px;
+}
+
+#b6-h1{
+   position: absolute; 
+   top: 20px;
+   left: -600px;
+   width: 100%;
+   color: #f4f4f4; 
+}
+
+#b6-p1{
+   position: absolute; 
+   top: 90px; 
+   left: 48px; 
+   width: 25%;
+   color: #f4f4f4;
+   text-align: left; 
+}
+
+#b6-img1{
+   position: absolute; 
+   top: 40px; 
+   left: 475px; 
+   width: 180px;
+}
+
+.credentials{
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #ffde46;
+  border-color: #ffde46;
+  border: 2px;
+  color: #154354;
+
+}
+
+.credentials_text{
+  color: white;
+  display:inline-block;
+}
+
+.box{
+  background-color: #154354;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.box2{
+  background-color: #0b3545;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.button{
+  padding: 7px;
+  border: 1.3px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: #154354;
+  font-size: 13px;
+}
+
+.button:hover{
+  background: white;
+  color: #154354;
+  transition: ease 250ms;
+}
+
+
+.credentials2{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffde46;
+  border-color: #ffde46;
+  border: 2px;
+  color: #154354;
+}
+
+.credentials_text2{
+  color: white;
+  display:inline-block;
+}
+
+.error{
+  color: red;
+}
+
+.tbl{
+  border:2px;
+  width: 90%;
+  height: 100%;
+  border-radius: 7px;
+  background-color: #0b3545;
+}
+
+.tblcell{
+  text-align: center;
+  border:2px solid #0b3545;
+  border-radius: 6px;
+  background-color: #ffde46;
+  padding: 2px;
+}
+
+.tblcell2{
+  background-color: #0b3545;
+  color: #ffffff;
+  border:2px solid #0b3545;
+  text-align: center;
+  border-radius: 6px;
+  margin: 0;
+  padding: 3px;
+  padding-top: 6px;
+}
+
+.tblcellfitb{
+  border:2px solid transparent;
+  background-color: #ffde46;
+  text-align: center;
+}
+
+.tblcellfitb2{
+  border:2px solid transparent;
+  background-color: #ffde46;
+  width: 1275px;
+  height: 100px;
+}
+
+input[type="text"] {
+outline-style: none;
+}
+
+.tblbtn {
+  padding: 7px;
+  border: 1.3px solid #0b3545;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0px;
+  background-color: white;
+  color: #0b3545;
+}
+
+.tblbtn:hover {
+  background: #0b3545;
+  color: white;
+  transition: ease 250ms;
+}
+
+
+.logoself{
+  width: 80%;
+  float: left;
+  padding-left: 500px;
+}
+
+#msgcred{
+  border:2px solid transparent;
+  border-radius: 6px;
+  background-color: #ffde46;
+  width: 960px;
+  height: 100px;
+}
+
+.credentials3{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffde46;
+  border-color: #ffde46;
+  border: 2px;
+  color: #154354;
+  width: 890px;
+}
+
+#sendbtn {
+  padding: 7px;
+  border: 1.3px solid #0b3545;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0px;
+  background-color: white;
+  color: #0b3545;
+}
+
+#sendbtn:hover {
+  background: #0b3545;
+  color: white;
+  transition: ease 250ms;
+}
+
+a:link {
+    background-color: none;
+}
+
+a:visited {
+    background-color: white;
+}
+
+a:hover {
+    background-color: none;
+}
+
+a:active {
+    background-color: none;
+} 
+
+#hb1-h1{
+  color: #ffffff;
+}
+
+#lemonimg{
+  width: 24%;
+  padding-left: 200px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: #0b3545;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #ffde46;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#buttons{
+  padding: 7px;
+  border: 1.3px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: #0b3545;
+  font-size: 13px;
+}
+
+#buttons:hover{
+  background: white;
+  color: #0b3545;
+  transition: ease 250ms;
+}
+
+#statbtn {
+  padding: 7px;
+  border: 1.3px #0b3545;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0px;
+  background-color: white;
+  color: #0b3545;
+}
+
+#statbtn:hover {
+  background: #0b3545;
+  color: white;
+  transition: ease 250ms;
+}

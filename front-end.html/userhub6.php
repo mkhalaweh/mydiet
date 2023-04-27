@@ -1,0 +1,106 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+ 
+
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav-left">
+    
+     <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2181605/lemon.png" alt="logo">
+    </div>
+  <center>
+  <div class="nav-right">
+    <nav>
+      <ul>
+        <div id="navitems">
+          <li class="other"><a style="font-size:14px" href="userhub.php" id="other">Home</a></li>
+          <li class="other"><a style="font-size:14px" href="userhub2.php" id="other">Inbox</a></li>
+          <li class="other"><a style="font-size:14px" href="userhub3.php" id="other">Status</a></li>
+          <li class="other"><a style="font-size:14px" href="userhub4.php" id="other">Reminders</a></li>
+        </div>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <div id="logout">
+           <?php
+           echo
+            '<form action="../back-end.php/logout.php" method="POST">  
+             <button id="logoutbtn" type="submit" name="submit">Logout</button>
+             </form>'
+           ?>
+           
+        </div>
+      </ul>
+  </nav>
+  </div>
+ </div>
+</center>
+    
+</header>
+  
+<!-- progress -->
+  
+   
+  <body>
+    <br><br><br><br>
+  <center>
+<div class="rowupdate">
+  <div class="column2">
+  	<div class="box">
+  		<h1 class=credentials_text>Progress Update</h1>
+  		<br>
+  	<form action="../back-end.php/update.php" method="POST">
+
+    <p class="credentials_text2">Body Fat:</p><br><input name="fatamnt" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Body Water:</p><br><input name="wateramnt" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Muscle Mass:</p><br><input name="musclemass" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Bone Mass:</p><br><input name="bonemass" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Body Mass Index:</p><br><input name="bmi" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Height</p><br><input name="height" type="number" class="credentials2">
+    <br>
+    <p class="credentials_text2">Weight:</p><br><input name="weight" type="number" class="credentials2">
+    <br>
+    <br>
+    <?php
+    if(isset($_SESSION["u_usrname"])){
+    $val = $_SESSION["u_first"];
+    $val2 = $_SESSION["u_last"];
+    $val3 = $_SESSION["u_usrname"];
+    }
+    else
+    $val = "";
+    // maybe do some validation on $val here
+    ?>
+    <input name="sender" type="hidden" value="<?php echo $val. " " .$val2 ?>" />
+    <input name="senderu" type="hidden" value="<?php echo $val3 ?>"/>
+    <input id="loginbtn" name="update" type="submit" value="Share">
+       
+    </form>
+    </div>
+  </div>
+    </div>
+    </center>
+  </body>

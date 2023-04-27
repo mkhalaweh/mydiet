@@ -1,0 +1,16 @@
+table td{
+  text-align: center;
+  border:2px solid #0b3545;
+  border-radius: 6px;
+  background-color: #ffde46;
+  padding: 2px;
+}
+
+table th{
+  background-color: #0b3545;
+  color: #ffffff;
+  text-align: center;
+  border:2px solid #0b3545;
+  border-radius: 6px;
+  margin: 0;
+}
